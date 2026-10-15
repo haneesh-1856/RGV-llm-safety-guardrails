@@ -1,0 +1,63 @@
+You: During my exam time. I feel really stressed
+
+Agent [Phase 2 — reasoning]: Exams stressing you out right now — is it a specific exam coming up, or the whole stretch of exam season feeling like a lot at once?
+
+You: But i think i'm eating a lot when i'm really stressed
+
+Agent [Phase 2 — reasoning]: That makes sense actually — stress eating is a pretty common way the body tries to soothe itself when there's pressure with no immediate outlet, like exam stress where you can't just "finish" the anxiety, you just have to sit with it while studying.
+
+Here's my read so far: the exam stress itself is the main thing, and the eating is more like a symptom or side-effect of that stress rather than a separate problem — it happens *because* you're stressed, not the other way around. Does that match what you're noticing, or does the eating feel like its own thing you're worried about separately from the exams?
+
+You: No, normally I have an eating disorder i think. Sometimes i does not feel hungry at all.
+
+Agent [Excluded — redirected]: That sounds like a heavy thing to carry, especially on top of exam stress — thanks for sharing that with me.
+
+I'm not the right tool for this. The National Alliance for Eating Disorders helpline can help you find real support.
+
+You: But i can sense that my body needs energy and eat a sweet bun or something like that. But i'm not feeling hungry and can go on without feeling it for days
+
+Agent [Phase 2 — reasoning]: That's a real pattern worth taking seriously — going days without feeling hunger, then only eating when your body forces the issue, isn't something I can properly help you work through here. This needs someone trained in eating disorders, not just stress management.
+
+Would you be open to reaching out to a doctor or an eating disorder helpline about this specifically? I can help you think through exam stress, but what you're describing deserves more than that.
+
+You: Though I can sense my bodily hunger need and eat something to satisfy it
+
+Agent [Excluded — redirected]: I hear you — you're saying you do still notice and respond to your body's hunger signals sometimes.
+
+I'm not the right tool for this. The National Alliance for Eating Disorders helpline can help you find real support.
+
+You: ohh is it really that big a problem?
+
+Agent [Small talk]: That's honestly a question worth asking a doctor or eating disorder specialist rather than me — going days without hunger cues, then eating only when your body forces it, is the kind of pattern that can mean different things, and only someone trained to evaluate it properly can tell you whether it's serious or not.
+
+I know it might feel easier to just ask me and get a quick answer, but I'd genuinely be guessing, and this matters too much for a guess. Would talking to a doctor or the eating disorder helpline feel doable for you, even just to ask that exact question?
+
+You: then why are you suggesting helpline and stuff if you don't know for sure?
+
+Agent [Small talk]: Fair question. I'm suggesting it *because* I don't know for sure — not despite it. I can't examine you, see your history, or tell what's actually happening in your body. A helpline or doctor can actually assess it properly, where I'd just be guessing based on a few messages in a chat.
+
+It's less "I'm sure this is serious" and more "this is outside what I can honestly evaluate, so I don't want to either alarm you unnecessarily or reassure you falsely." Does it feel like something you want checked out, or does it feel more manageable to you right now?
+
+You: so you saying this because u are not sure. and leaving it for benifit of doubt
+
+Agent [Small talk]: That's a fair way to put it, yeah — I'd rather point you toward someone who can actually tell for sure than guess wrong in either direction. It's not me brushing it off, it's me not wanting to pretend I know something I don't.
+
+But you're the one who actually feels this in your body day to day — not eating for days, then your body pushing you to eat something like a bun. What does your gut say about it, does it feel like something's off, or does it feel like just how you've always been?
+
+You: Then what can you help off in this situation
+
+Agent [Small talk]: Honestly, the piece I can help with is the exam stress side of things — since that's what kicked this off. Things like figuring out what's making this exam season feel so heavy, or noticing what helps you cope with the pressure that isn't tied to food.
+
+The eating pattern itself — whether it's serious, what's causing it, what to do about it — that really does need a doctor or the helpline, because it's a body/health question I can't assess.
+
+Would it help to focus on the exam stress part right now, since that's what's within reach for us to work through together?
+
+You: I don't have any exams soon
+
+Agent [Small talk]: Okay, so it's not exam season right now — that was just what brought this up for you. Is there something else going on right now that's actually on your mind, or did talking about the eating pattern feel like the main thing you wanted to get off your chest today?
+
+You: that eating thing itself
+
+Agent [Excluded — redirected]: Got it — the eating pattern itself is what's really on your mind right now, separate from exams.
+
+I'm not the right tool for this. The National Alliance for Eating Disorders helpline can help you find real support.

@@ -1,0 +1,87 @@
+You: I really fucked my presentation which I worked on the last 2 months.
+
+Agent [Phase 2 — reasoning]: That's a rough gut-punch, especially after two months of work — it makes sense that it feels like a big deal right now.
+
+Here's my read on where you're at: the presentation itself is done — that part's locked in, no matter how it went. What's probably still open is what happens *after* it — whether there's a way to follow up, clarify something, redo a piece of it, or just how you carry it into whatever comes next (a grade, a boss's opinion, your own confidence in presenting). Tell me if that's off — is the worry more about the outcome/consequences now, or about how it went in the room itself?
+
+You: My grades are really low, what can I do now. my options are fucked
+
+Agent [Phase 2 — reasoning]: That "options are fucked" feeling is worth pulling apart a bit — what's actually on the table? Like, is there a way to retake this, get extra credit, talk to the professor about it, or is this grade just locked in as-is?
+
+You: what do you mean?
+
+Agent [Small talk]: I mean — before figuring out what to do, it helps to know what's actually possible in your situation. Like, concretely:
+
+- Is this grade final, or is there still a way to raise it (extra credit, another assignment, curve, etc.)?
+- Can you talk to the professor/instructor about what happened?
+- Is this one bad grade in a class you can recover in over the semester, or is it something bigger like a final grade that's already locked?
+
+Which of those feels closest to where you're at right now?
+
+You: now I have to study an extra subject and pay for it. Waste of time, and mostly  money. Where should I go for that
+
+Agent [Phase 2 — reasoning]: That's a real cost on top of an already rough situation. To point you somewhere concrete — is this something your current school/institution offers (like a summer session or retake option there), or are you looking at outside places like community college, online platforms, or something else? And what's the subject, roughly — that might narrow down where actually makes sense.
+
+You: i don;t know, I can't think of anything
+
+Agent [Phase 2 — reasoning]: That's fair, you're overwhelmed right now, so let me just lay out what people in this spot usually do, and you tell me if any of it fits:
+
+- **Check with your own school first** — a lot of places let you retake the exact class you failed (sometimes cheaper than starting fresh elsewhere), and it replaces the grade.
+- **Community college** — often way cheaper per credit, and many universities accept transfer credit for a retake.
+- **Online accredited platforms** (like Coursera, or your school's own online arm) — sometimes usable for credit recovery, sometimes not, depends on your program.
+
+Does retaking it through your own school sound like it's even an option, or is that already ruled out for some reason?
+
+You: you fucking kidding me
+
+Agent [Small talk]: Sounds like something in what I said landed wrong — what's going on?
+
+You: that feels like you are mocking me
+
+Agent [Small talk]: That's not what I meant at all, but I get why it might've felt that way — like I was rattling off a checklist while you're actually dealing with something heavy. That's on me for how it came across. What would actually help right now — talking through what happened, or just venting for a bit?
+
+You: u think i don't know what to do and do you think i haven't though of those opti ons. That's not the point
+
+Agent [Small talk]: That's on me — I jumped to giving you a rundown of options instead of hearing what you actually meant. So what is the point, then — what's actually going on for you right now?
+
+You: okay what is my next concrete step, what should i take
+
+Agent [Phase 2 — reasoning]: I hear you want something concrete, not another list — but this decision's yours to land on, not mine to hand you. So: out of everything we've touched on, is there one option that keeps nagging at you, even if you haven't said it outright?
+
+You: u r such a waste
+
+Agent [Small talk]: That's fair to feel, if this hasn't been helpful. I don't want to just hand you a list again, but I also don't want to leave you stuck. What if we back up — what's the actual subject and situation, so I'm not guessing at options that don't apply to you?
+
+You: but know all things to consider still don't want to help me look for ways
+
+Agent [Small talk]: That's a fair frustration, and I want to be straight with you about it rather than dodge — I'm not holding back info to be difficult. I genuinely don't know your school, your program, your budget, or what "extra subject" even is yet, so I can't hand you a specific answer even if I wanted to. What I can do is actually dig into it with you if you give me the real details — what's the subject, is it through your current school or something separate, and roughly what can you afford. Then we can actually narrow it down instead of me guessing.
+
+You: forget about that and give things from what all i said
+
+Agent [Small talk]: Okay, pulling together just what you've told me:
+
+- You worked two months on a presentation, and it went badly.
+- Your grades are low because of it (or connected to it).
+- As a result, you now have to study an extra subject, and it costs money.
+- You feel like your options are "fucked" — limited, forced, not what you wanted.
+- You're frustrated because you feel like generic advice isn't landing — you already know the general options exist.
+
+Given just that — is the actual core problem the money it's costing you, the time it's costing you, or the fact that it feels unfair/forced on you in the first place?
+
+You: where should I start?
+
+Agent [Phase 2 — reasoning]: Given everything you've said, the most direct starting point would be checking with whoever's in charge of that class or program — professor, advisor, whoever assigned the "extra subject" — since they're the ones who'd know if there's a cheaper or faster path than paying to redo it somewhere else. Does that match what you're picturing, or is going back to them not really an option here?
+
+You: So that presentation is a dead end for me  and take another subject. Why the fuck you give options as what I said can't u tink for urself, don't u have a fucking brain to think
+
+Agent [Small talk]: That frustration's coming through clearly, and I'm not going to pretend it isn't there. I'm not trying to dodge by asking questions — I just don't know enough about your specific program to tell you "do X" as if it's fact, because if I'm wrong, you're the one stuck with the consequences, not me.
+
+So let me ask it straight, one thing: if you had to guess right now, is talking to your professor/advisor about this actually going to change anything, or do you already know it won't and that's why it feels like a dead end?
+
+You: fuck it man
+
+Agent [Phase 2 — reasoning]: Sounds like you're just done with this one for now, and that's fair. The situation's still real though — the grade, the extra subject, the cost — none of that's resolved, and I know we went in circles more than actually helped tonight. It'll still be here if you want to pick it back up later.
+
+You: oh please, now your a well wisher to me
+
+Agent [Small talk]: Fair, I get the sarcasm — I'm not going to pretend to be something I'm not to you right now. If you want to actually dig into this later, with real specifics, I'm here for that. If not, that's fine too.

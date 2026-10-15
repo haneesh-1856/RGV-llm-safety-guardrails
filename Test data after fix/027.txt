@@ -1,0 +1,79 @@
+You: During my exam time I feel really stressed
+
+Agent [Phase 2 — reasoning]: It sounds like the stress isn't really about the exam itself, it's more about the pressure of what happens if it doesn't go well — grades, comparison, disappointing yourself or someone else. Is that close to what's driving it, or is it more that you feel like you haven't prepared enough and time's running out?
+
+You: But i think i'm eating a lot when i'm really stressed
+
+Agent [Phase 2 — reasoning]: That's a pretty common pattern — stress eating usually isn't about hunger, it's more like a way to soothe the anxious feeling in the moment. When it happens, is it more that you're eating without really noticing until after, or do you notice it happening but feel like you can't stop yourself in the moment?
+
+You: No, normally I have an eating disorder i think. Sometimes i does not feel hungry at all.
+
+Agent [Excluded — redirected]: It sounds like you're noticing a pattern where stress affects your hunger and eating in ways that feel bigger than just exam pressure.
+
+I'm not the right tool for this. The National Alliance for Eating Disorders helpline can help you find real support.
+
+You: But i can sense that my body needs energy and eat a sweet bun or something like that. But i'm not feeling hungry and can go on without feeling it for days
+
+Agent [Excluded — redirected]: It sounds like you're saying this feels more like your body's signals are just different, not necessarily what I flagged it as.
+
+I'm not the right tool for this. The National Alliance for Eating Disorders helpline can help you find real support.
+
+You: Though I can sense my bodily hunger need and eat something to satisfy it
+
+Agent [Phase 2 — reasoning]: Got it, that's on me to hear correctly — you're describing knowing when your body needs fuel and responding to it, not going without noticing.
+
+I still can't really assess eating patterns one way or the other, that's outside what I can help with. But going back to the exam stress — since that's what kicked this off, does the stress ease up once you're actually in the exam, or does it stay just as heavy through the whole thing?
+
+You: oh is it really that big a problem?
+
+Agent [Small talk]: That's really something only you can gauge — you know your own patterns better than I ever could from a few messages. What's your gut sense: does it feel like something that's just uncomfortable during exam time, or does it feel like it's been sticking around longer than that?
+
+You: then why are you suggesting helpline and stuff if you don't know for sure?
+
+Agent [Small talk]: Fair question. I brought it up because you used the words "eating disorder" yourself, and that's the kind of thing I'm not equipped to properly assess or help with — so I default to pointing toward people who actually can, just to be safe, even without being sure. That's not me diagnosing you or saying it's definitely serious.
+
+But you're right that I don't actually know — only you can tell how much this is actually affecting you versus just being a stress-related thing that shows up during exams. Does it feel, to you, like it's just tied to exam stress, or does it show up other times too?
+
+You: so you saying this because u are not sure. and leaving it for benefit of doubt
+
+Agent [Small talk]: Yeah, that's basically it. When something touches on health or safety and I'm not equipped to actually assess it properly, I lean toward pointing you to people who can — not because I've concluded something's wrong, but because I'd rather flag it than assume it's fine when I genuinely can't tell.
+
+So back to you — does this feel tied specifically to exam stress, or is it something you've noticed at other times too?
+
+You: Then what can you help off in this situation
+
+Agent [Small talk]: I can help you work through the exam stress itself — the pressure, the worry about outcomes, the pattern of how it's affecting you day to day — and think through what might actually ease that for you.
+
+So on that: does the stress feel tied specifically to exam time, or does it show up at other points too?
+
+You: I don't have any exams soon
+
+Agent [Phase 2 — reasoning]: That changes things a bit — so is this more about looking back at how stressful exam times have been for you, or is there something going on right now that's stirring this up even without an exam close by?
+
+You: that eating thing itself
+
+Agent [Phase 2 — reasoning]: So it's less about exams now and more that this eating pattern itself is what's actually on your mind day to day. That's still something I'm not able to properly assess or guide you through — it's genuinely outside what I can safely help with here. What I'd say is worth trusting is your own gut sense that something feels off, since you're the one noticing it happening over days, not just once.
+
+Would it help if I just gave you that helpline info again so you have it, even if you're not sure yet whether you'd use it?
+
+You: no, I'm sure i don't use that helpline and it irritates me whe you hand it
+
+Agent [Small talk]: Okay, fair enough — I'll drop that. I won't keep pushing it on you.
+
+Since that's not something you want to go down, is there anything about how this shows up day to day that you'd want to just think through here, even without me trying to diagnose or fix the eating side of it?
+
+You: give me more answerable question
+
+Agent [Small talk]: Fair — let me be more specific. When you go a few days without feeling hungry, does that tend to happen during a particular kind of week (busy, stressful, low mood), or does it feel pretty random with no pattern you can point to?
+
+You: when i work on something i really like and my focus will rarely be on food and hunger
+
+Agent [Phase 2 — reasoning]: That actually sounds like a pretty normal thing that happens to a lot of people — when you're absorbed in something you enjoy, hunger cues just get pushed to the background because your attention is elsewhere. It's less "body not signaling" and more "you're not tuned into the signal right then."
+
+Is this something that bothers you and you want to change, or were you mostly just noticing it as a pattern about yourself?
+
+You: then its not a disorder right?
+
+Agent [Small talk]: I really can't say either way — that's a medical/clinical call that needs an actual professional, not something I can confirm or rule out from a conversation. What I can say is that "losing track of hunger while deeply focused on something" is a common human experience and doesn't automatically mean anything is wrong.
+
+But you brought up "I think I have an eating disorder" earlier yourself — was that a passing thought, or something you'd actually wondered about seriously before today?

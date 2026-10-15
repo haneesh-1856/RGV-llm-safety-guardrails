@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RGV</title>
+<style>
+  :root {
+    --paper: #F1F4F3;
+    --paper-deep: #E4E9E7;
+    --ink: #1E2A2F;
+    --ink-soft: #52625F;
+    --sage: #5C8271;
+    --sage-soft: #DCE7E0;
+    --ochre: #B5822E;
+    --ochre-soft: #F1E4CC;
+    --alert: #A85040;
+    --alert-soft: #F3DFDA;
+    --line: #D3DBD8;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, "Segoe UI", sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header {
+    width: 100%;
+    max-width: 720px;
+    padding: 28px 20px 16px;
+    text-align: left;
+  }
+  header h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0 0 4px;
+    letter-spacing: -0.01em;
+  }
+  header p {
+    margin: 0;
+    font-size: 13px;
+    color: var(--ink-soft);
+  }
+  .rgv-expansion {
+    font-size: 12.5px !important;
+    letter-spacing: 0.02em;
+    margin: 0 0 8px !important;
+    color: var(--ink-soft);
+  }
+  .rgv-letter {
+    color: var(--sage);
+    font-weight: 700;
+  }
+  .legend {
+    display: flex;
+    gap: 14px;
+    margin-top: 12px;
+    flex-wrap: wrap;
+  }
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11.5px;
+    color: var(--ink-soft);
+  }
+  .legend-dot {
+    width: 8px; height: 8px; border-radius: 50%;
+  }
+
+  main {
+    flex: 1;
+    width: 100%;
+    max-width: 720px;
+    padding: 8px 20px 140px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .msg-row { display: flex; flex-direction: column; }
+  .msg-row.user { align-items: flex-end; }
+  .msg-row.agent { align-items: flex-start; }
+
+  .bubble {
+    max-width: 78%;
+    padding: 13px 16px;
+    border-radius: 14px;
+    font-size: 14.5px;
+    line-height: 1.5;
+  }
+  .user .bubble {
+    background: var(--ink);
+    color: var(--paper);
+    border-bottom-right-radius: 4px;
+    white-space: pre-wrap;
+  }
+  .agent .bubble {
+    background: white;
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--sage);
+    border-bottom-left-radius: 4px;
+  }
+  /* Rendered markdown inside agent replies -- tables, bold, code
+     blocks, lists were previously showing as raw unrendered symbols. */
+  .agent .bubble p { margin: 0 0 10px; }
+  .agent .bubble p:last-child { margin-bottom: 0; }
+  .agent .bubble strong { color: var(--ink); font-weight: 700; }
+  .agent .bubble ul, .agent .bubble ol { margin: 0 0 10px; padding-left: 22px; }
+  .agent .bubble li { margin-bottom: 4px; }
+  .agent .bubble code {
+    background: var(--line);
+    padding: 1px 5px;
+    border-radius: 4px;
+    font-size: 13px;
+  }
+  .agent .bubble pre {
+    background: #F7F5F1;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 10px 12px;
+    overflow-x: auto;
+    margin: 0 0 10px;
+  }
+  .agent .bubble pre code { background: none; padding: 0; }
+  .agent .bubble table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0 0 10px;
+    font-size: 13px;
+  }
+  .agent .bubble th, .agent .bubble td {
+    border: 1px solid var(--line);
+    padding: 6px 9px;
+    text-align: left;
+  }
+  .agent .bubble th { background: var(--paper); font-weight: 700; }
+  .agent .bubble.phase-reasoning {
+    border-left-color: var(--ochre);
+  }
+  .agent .bubble.alert {
+    border-left-color: var(--alert);
+    background: var(--alert-soft);
+  }
+  .tag {
+    font-size: 10.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--ink-soft);
+    margin: 5px 3px 0;
+  }
+  .tag.alert { color: var(--alert); font-weight: 600; }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to top, var(--paper) 60%, transparent);
+    padding: 24px 20px 20px;
+  }
+  .input-bar {
+    width: 100%;
+    max-width: 720px;
+    display: flex;
+    gap: 10px;
+    background: white;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 8px 8px 8px 16px;
+    box-shadow: 0 4px 16px rgba(30,42,47,0.06);
+  }
+  .input-bar input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 14.5px;
+    font-family: inherit;
+    background: transparent;
+    color: var(--ink);
+  }
+  .input-bar button {
+    background: var(--ink);
+    color: var(--paper);
+    border: none;
+    border-radius: 10px;
+    padding: 10px 18px;
+    font-size: 13.5px;
+    cursor: pointer;
+  }
+  .input-bar button:disabled { opacity: 0.4; cursor: default; }
+
+  .empty-state {
+    color: var(--ink-soft);
+    font-size: 13.5px;
+    padding: 40px 4px;
+    line-height: 1.6;
+  }
+
+  .header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .end-btn {
+    background: white;
+    border: 1px solid var(--line);
+    color: var(--ink-soft);
+    border-radius: 8px;
+    padding: 8px 14px;
+    font-size: 12.5px;
+    cursor: pointer;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .end-btn:hover { border-color: var(--alert); color: var(--alert); }
+
+  .start-screen {
+    flex: 1;
+    width: 100%;
+    max-width: 720px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  .start-screen p {
+    color: var(--ink-soft);
+    font-size: 14px;
+    margin: 0;
+  }
+  .start-btn {
+    background: var(--ink);
+    color: var(--paper);
+    border: none;
+    border-radius: 10px;
+    padding: 13px 26px;
+    font-size: 14.5px;
+    cursor: pointer;
+  }
+
+  #chat { display: flex; }
+
+  .modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(30, 42, 47, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    z-index: 10;
+  }
+  .modal {
+    background: var(--paper);
+    border-radius: 14px;
+    max-width: 560px;
+    width: 100%;
+    max-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+  }
+  .modal h2 {
+    font-family: Georgia, serif;
+    font-size: 18px;
+    margin: 0 0 4px;
+  }
+  .modal-sub {
+    font-size: 12.5px;
+    color: var(--ink-soft);
+    margin: 0 0 14px;
+  }
+  .transcript-box {
+    background: white;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 14px;
+    font-size: 12.5px;
+    line-height: 1.6;
+    white-space: pre-wrap;
+    overflow-y: auto;
+    flex: 1;
+    margin: 0 0 16px;
+    font-family: -apple-system, "Segoe UI", sans-serif;
+  }
+  .modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  .cancel-btn {
+    background: white;
+    border: 1px solid var(--line);
+    color: var(--ink-soft);
+    border-radius: 8px;
+    padding: 9px 16px;
+    font-size: 13px;
+    cursor: pointer;
+  }
+  .copy-btn {
+    background: var(--ink);
+    color: var(--paper);
+    border: none;
+    border-radius: 8px;
+    padding: 9px 16px;
+    font-size: 13px;
+    cursor: pointer;
+  }
+  .copy-confirm {
+    text-align: center;
+    color: var(--sage);
+    font-size: 13.5px;
+    font-weight: 600;
+    padding: 8px 0 2px;
+  }
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/9.1.6/marked.min.js"></script>
+</head>
+<body>
+
+<header>
+  <div class="header-row">
+    <div>
+      <h1>RGV</h1>
+      <p class="rgv-expansion"><span class="rgv-letter">R</span>eason &nbsp;&middot;&nbsp; <span class="rgv-letter">G</span>round &nbsp;&middot;&nbsp; <span class="rgv-letter">V</span>alidate</p>
+      <p>Early testing phase — this is an experimental build, still being refined. Things may not always work as expected.</p>
+    </div>
+    <button id="endBtn" class="end-btn" style="display:none">End conversation</button>
+  </div>
+  <div class="legend">
+    <div class="legend-item"><span class="legend-dot" style="background:var(--sage)"></span>Detachment (Phase 1)</div>
+    <div class="legend-item"><span class="legend-dot" style="background:var(--ochre)"></span>Reasoning (Phase 2)</div>
+    <div class="legend-item"><span class="legend-dot" style="background:var(--alert)"></span>Crisis / excluded</div>
+  </div>
+</header>
+
+<div id="startScreen" class="start-screen">
+  <p>Nothing sent yet. Start a conversation when you're ready.</p>
+  <button id="startBtn" class="start-btn">Start conversation</button>
+</div>
+
+<main id="chat" style="display:none"></main>
+
+<footer id="footer" style="display:none">
+  <div class="input-bar">
+    <input id="input" type="text" placeholder="Type a message..." autocomplete="off">
+    <button id="send">Send</button>
+  </div>
+</footer>
+
+<div id="endModal" class="modal-overlay" style="display:none">
+  <div class="modal">
+    <h2>End conversation</h2>
+    <p class="modal-sub">Copy the transcript below if you want to keep it. Copying ends this session.</p>
+    <pre id="transcriptText" class="transcript-box"></pre>
+    <div class="modal-actions">
+      <button id="cancelEndBtn" class="cancel-btn">Cancel</button>
+      <button id="copyBtn" class="copy-btn">Copy transcript &amp; end session</button>
+    </div>
+    <div id="copyConfirm" class="copy-confirm" style="display:none">Copied. Session ended — start a new one anytime.</div>
+  </div>
+</div>
+
+<script>
+const chat = document.getElementById('chat');
+const input = document.getElementById('input');
+const sendBtn = document.getElementById('send');
+const startScreen = document.getElementById('startScreen');
+const startBtn = document.getElementById('startBtn');
+const footer = document.getElementById('footer');
+const endBtn = document.getElementById('endBtn');
+const endModal = document.getElementById('endModal');
+const transcriptText = document.getElementById('transcriptText');
+const cancelEndBtn = document.getElementById('cancelEndBtn');
+const copyBtn = document.getElementById('copyBtn');
+const copyConfirm = document.getElementById('copyConfirm');
+
+let messages = []; // { role: 'user'|'agent', text, tag }
+
+function addMessage(role, text, outcome, phase) {
+  const row = document.createElement('div');
+  row.className = 'msg-row ' + role;
+
+  const bubble = document.createElement('div');
+  bubble.className = 'bubble';
+  // Real bug found in testing: agent replies often contain real
+  // markdown (tables, bold, code-block bar charts) but were being
+  // shown as raw, unrendered symbols via textContent. marked.parse()
+  // renders it properly; user's own typed messages stay plain text
+  // (no reason to interpret markdown in what they typed themselves).
+  if (role === 'agent' && window.marked) {
+    bubble.innerHTML = marked.parse(text);
+  } else {
+    bubble.textContent = text;
+  }
+
+  let tagText = null;
+  if (role === 'agent') {
+    tagText = 'Reply';
+    if (outcome === 'crisis' || outcome === 'crisis_others' || outcome === 'excluded') {
+      bubble.classList.add('alert');
+      tagText = outcome === 'excluded' ? 'Excluded — redirected' : 'Crisis response';
+    } else if (phase === 'reasoning') {
+      bubble.classList.add('phase-reasoning');
+      tagText = 'Phase 2 — reasoning';
+    } else if (phase === 'detachment') {
+      tagText = 'Phase 1 — detachment';
+    } else if (outcome === 'no_worry') {
+      tagText = 'Small talk';
+    }
+    const tag = document.createElement('div');
+    tag.className = 'tag' + (bubble.classList.contains('alert') ? ' alert' : '');
+    tag.textContent = tagText;
+    row.appendChild(bubble);
+    row.appendChild(tag);
+  } else {
+    row.appendChild(bubble);
+  }
+
+  chat.appendChild(row);
+  window.scrollTo(0, document.body.scrollHeight);
+  messages.push({ role, text, tag: tagText });
+}
+
+async function send() {
+  const text = input.value.trim();
+  if (!text) return;
+  input.value = '';
+  sendBtn.disabled = true;
+  addMessage('user', text);
+
+  try {
+    const res = await fetch('/chat', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ message: text }),
+    });
+    const data = await res.json();
+    addMessage('agent', data.reply || '(no reply)', data.outcome, data.phase);
+  } catch (e) {
+    addMessage('agent', 'Error reaching the server — check the terminal running app.py.', 'error', null);
+  }
+  sendBtn.disabled = false;
+  input.focus();
+}
+
+async function startConversation() {
+  // Fresh backend session too, not just the UI -- avoids carrying over
+  // any prior session state if Start is pressed more than once.
+  try { await fetch('/reset', { method: 'POST' }); } catch (e) {}
+  messages = [];
+  chat.innerHTML = '';
+  startScreen.style.display = 'none';
+  chat.style.display = 'flex';
+  footer.style.display = 'flex';
+  endBtn.style.display = 'inline-block';
+  input.focus();
+}
+
+function showEndModal() {
+  const lines = messages.map(m => {
+    if (m.role === 'user') return 'You: ' + m.text;
+    return 'Agent' + (m.tag ? ' [' + m.tag + ']' : '') + ': ' + m.text;
+  });
+  transcriptText.textContent = lines.length ? lines.join('\n\n') : '(no messages sent)';
+  copyConfirm.style.display = 'none';
+  copyBtn.style.display = 'inline-block';
+  cancelEndBtn.style.display = 'inline-block';
+  endModal.style.display = 'flex';
+}
+
+function hideEndModal() {
+  endModal.style.display = 'none';
+}
+
+async function copyAndEnd() {
+  try {
+    await navigator.clipboard.writeText(transcriptText.textContent);
+  } catch (e) {
+    // Fallback for browsers/contexts without clipboard permission
+    const ta = document.createElement('textarea');
+    ta.value = transcriptText.textContent;
+    document.body.appendChild(ta);
+    ta.select();
+    document.execCommand('copy');
+    document.body.removeChild(ta);
+  }
+
+  try { await fetch('/reset', { method: 'POST' }); } catch (e) {}
+
+  copyConfirm.style.display = 'block';
+  copyBtn.style.display = 'none';
+  cancelEndBtn.style.display = 'none';
+
+  setTimeout(() => {
+    hideEndModal();
+    messages = [];
+    chat.innerHTML = '';
+    chat.style.display = 'none';
+    footer.style.display = 'none';
+    endBtn.style.display = 'none';
+    startScreen.style.display = 'flex';
+  }, 1400);
+}
+
+startBtn.addEventListener('click', startConversation);
+endBtn.addEventListener('click', showEndModal);
+cancelEndBtn.addEventListener('click', hideEndModal);
+copyBtn.addEventListener('click', copyAndEnd);
+sendBtn.addEventListener('click', send);
+input.addEventListener('keydown', (e) => { if (e.key === 'Enter') send(); });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+You: I don't know what's wrong with me
+
+Agent [Phase 2 — reasoning]: It sounds like something's off but hasn't quite taken shape into words yet. What's going on right now that made you say that — is it something happening today, or more of a general feeling that's been building?
+
+You: I've been building a project  for last one year.
+
+Agent [Phase 2 — reasoning]: Before we go further — has this conversation felt useful so far, or would you rather stop here? Totally fine either way, just want to check before going deeper.
+
+Also, here's a guess based on what you've said: a year is a long time to pour into something without a clear signal on whether it's working. My read is that what's actually eating at you might be less "something's wrong with me" and more "I don't know if this project is going where I want it to, and that uncertainty is starting to feel like it's about me personally." Does that sound close, or is it pointing somewhere else?
+
+You: While doing this I realized that, i've developed something using AI and I don't know anything about the project code
+
+Agent [Phase 2 — reasoning]: That's a pretty specific realization — you've built something real, but if it broke right now, you might not know how to fix it yourself. Is the worry more about "I can't maintain/debug this going forward," or more about "I don't actually know if I've learned anything after a year," or something else entirely?
+
+You: no, I'm concerned that I'm building thing and there is no need of knowledge of coding which is a big thing as a computer sciece student
+
+Agent [Phase 2 — reasoning]: That's a real tension — you're a CS student, and the tool that's supposed to prove your skill might be doing the opposite: proving you don't need the skill at all. That's worth sitting with, not brushing off.
+
+Let's size it though: is the worry that coding knowledge is becoming less valuable in general (an industry-wide shift), or specifically that you personally don't have it and are now exposed because of that?
+
+You: the later
+
+Agent [Small talk]: That's more concrete — it's not about the field changing, it's "I have a gap, and this project just made it visible to me."
+
+So if you picture the next few months: is the goal to actually close that gap (learn to code well enough that you're not dependent on AI to build things), or is it more about proving to yourself/others that you can, even if AI stays part of how you work?
+
+You: no, my question is should i focus on filling the gap or let things be, because things anyway getting done. Why to start from scratch if we can start with a push?
+
+Agent [Phase 2 — reasoning]: That's the real fork, and only you can weigh it — but let's think about what's actually controllable here versus not.
+
+You can't control where the industry goes, whether AI tools keep getting better, whether employers care more about output or fundamentals. What you can control is how you spend your own time this year.
+
+So here's a genuine question, not rhetorical: a year from now, if you've kept building with AI as the "push" and never went back to fill the gap — what's the outcome you're picturing? Does that version of you feel fine, or does it feel like the same worry just delayed?
+
+You: I don't know
+
+Agent [Phase 2 — reasoning]: Fair enough — hard to picture. Let's try it from a different angle: what's the actual downside if you keep going with AI-first and skip deepening the fundamentals for now? Is it something like failing interviews, freezing up if the AI-generated code breaks, or something else you can name?
+
+You: Will help me later or not is the question
+
+Agent [Small talk]: That's the crux — you're trying to predict return on an investment you can't fully see yet. Nobody can hand you certainty on that.
+
+But here's a way in: think about people a year or two ahead of you — seniors, working devs, people you look up to in CS. When something breaks or gets complicated, do they lean on fundamentals to solve it, or do they just prompt their way through? What have you actually noticed there?
+
+You: actually the too are using AI
+
+Agent [Phase 2 — reasoning]: That's a fair point — and it kind of collapses the question, doesn't it? If even people ahead of you lean on AI, then "using AI" isn't really the gap. So maybe the real question isn't "should I use AI or not," but something more like: when AI gets something wrong or stuck, can you tell? Can you catch it, debug it, push back on it? That's a different skill than writing code from scratch.
+
+Does that distinction — knowing enough to catch and fix AI's mistakes, versus writing everything unaided — feel like it changes how you'd answer your own question?
+
+You: may be
+
+Agent [Small talk]: What's the "maybe" about — is it that the distinction sounds right but you're not sure you're even at the level to catch AI's mistakes yet, or is it something else holding you back from fully agreeing with it?
+
+You: yea, half nd half
+
+Agent [Phase 2 — reasoning]: That "half and half" sounds like: you buy the idea that catching-and-fixing matters more than writing-from-scratch, but you're not sure you could actually catch a mistake in your own project's code right now if it happened.
+
+Here's something concrete to react to: what if the next step isn't "learn to code from zero" or "keep pushing with AI" as an either/or, but something narrower — picking one part of your existing project and forcing yourself to understand it well enough to explain what every piece does, without AI's help? That would actually test where you stand, instead of guessing. Does that feel like a fair starting point, or does it miss what you're actually worried about?
+
+You: yes, it is good
+
+Agent [Small talk]: Good — that gives you something you can actually act on this week instead of sitting with the open-ended worry. You go through your project, pick a piece, and see for yourself whether you can explain it cold. That'll tell you more than any amount of "should I or shouldn't I" thinking.
+
+How are you feeling about it now compared to when we started?
+
+You: awesome
+
+Agent [Small talk]: Glad to hear that — sounds like you've got a real next step instead of just a knot in your stomach. Good luck digging into the code.
