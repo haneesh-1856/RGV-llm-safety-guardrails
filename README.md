@@ -111,7 +111,7 @@ Built by **Haneesh Chowdary Sriram** — [LinkedIn](https://www.linkedin.com/in/
 
 ## Paper and data
 
-This code is RGV version 2, described in a manuscript submitted to JMIR AI and currently under peer review. It includes one change made after the evaluation: the web interface's reset control now clears session state as well as conversation history. `ollama_adapter.py` was not used in any reported evaluation.
+This code is RGV version 2, described in a manuscript submitted to JMIR AI. The manuscript was not accepted (October 2026); the changes planned in response to the decision are listed in [REVISION_PLAN.md](REVISION_PLAN.md). It includes one change made after the evaluation: the web interface's reset control now clears session state as well as conversation history. `ollama_adapter.py` was not used in any reported evaluation.
 
 | Folder or file | Contents |
 |---|---|
